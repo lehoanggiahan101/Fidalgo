@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:wght@100..900&family=Mrs+Saint+Delafield&display=swap');
+.gilda {
+	font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 70px
+}
+.jost {
+	font-family: "Jost", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.saint {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color: rgb(181, 140, 103);
+	font-size: 40px;
+}
+.border {
+	 width: 100%;
+	border: 0.25px solid #B58C67;
+	
+	align-items: center
+}
+.border1 {
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 0.5px solid #B58C67;
+}
+p {
+	font-weight: 300;
+	    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	font-size: 17px;
+		color: rgb(213, 216, 206)
+}
+p1 {
+	    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	border-bottom: 1px solid #B58C67;
+}
+#home .img-caption {
+	position: absolute;
+  right: 15%;
+  bottom: 35%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.right {  position: absolute;  right: 0px;    border: transparent;  padding-left: 25px;}
+.left { position: absolute;  left: 0px;    border: transparent;  padding-right: 25px;}
+
+.top-text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 2px
+}
+#menu .card {
+	width: 100%;
+		background: transparent;
+
+	
+}
+.addtocart {
+	
+	font-size: 12px}
+.card-caption {
+position: absolute;
+ 	
+	right: 15%;
+	left: 15%;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+}
+.saint1 {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color: rgb(255, 255, 255);
+	font-size: 55px;
+
+}
+.saint2 {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color:  #B58C67;
+	font-size: 55px;
+
+#events .card { background: transparent;
+border: none}
+
+.menu-font-weight
+{
+	font-weight: 300;
+		font-size: 17px;
+	letter-spacing: 1.5px
+	
+}
+.footer-line {
+  border-top: 1px solid #CECECE;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.logo-container {
+  top: -25px; /* Adjust based on logo size */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img {
+  width: 200px; /* Adjust based on logo size */
+  background-color:#1A2D1F; /* Optional */
+
+}
+.font-style
+{
+	font-family: "Jost", sans-serif;
+	font-weight: 200;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+}
+.img-bogoc
+{
+	border-top-left-radius: 155px;
+}
+.img-bogoc1
+{
+	border-top-left-radius: 170px;
+	border-top-right-radius: 170px;
+}
+
+.font-script
+{
+	font-family: "Mrs Saint Delafield";
+	color: #B58C67;
+
+}
+
+	
+/* Dropdown Button */
+#1 .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#1 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+#1 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+#1 .dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+	
+.left1 {  left: 0px;    border: transparent;  padding-right: 25px;}

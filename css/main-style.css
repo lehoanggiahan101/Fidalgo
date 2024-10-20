@@ -1,0 +1,593 @@
+@charset "utf-8";
+/* CSS Document */
+.btn {
+	transition: all 1s
+}
+
+.card{
+	position: relative;
+	overflow: hidden
+}
+
+.card-body {
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+	bottom: -50%;
+	transition: all 1s;
+	/*transform: scaleX(0);
+	transform-origin: left center;
+	opacity: 0*/
+}
+.card img
+{
+	transition: all 1s;
+}
+.card:hover >img
+{
+	transform: scale(1.6) rotate(-15deg)
+}
+.card:hover >.card-body
+{
+	bottom: 10%;
+	/*transform: scaleX(1);
+	opacity: 1*/
+	
+}
+#carouselExampleIndicators1 .carousel-caption
+{
+	width: 30%;
+	top: 10%;
+	left: 55%;
+	text-align: left
+}
+#carouselExampleIndicators1 .carousel-caption-center
+{
+	width: 50%;
+	top: 20%;
+	left: 25%;
+	text-align: center
+}
+@media (max-width:960px){
+#carouselExampleIndicators1 .img-fluid
+{
+	height: 50vh
+}
+	#carouselExampleIndicators1 .carousel-caption
+{
+	width: 70%;
+	top: 10%;	
+	left: 15%;
+	text-align: center
+	}
+	#carouselExampleIndicators1 .carousel-caption .display-3{
+		font-size: 2rem
+	}
+	.carousel-indicators li { 
+  	width: 12px;
+  	height: 12px;
+	}
+}
+
+
+#danhmuc .btn{
+	position: absolute;
+	width: 90%;
+	text-align: center;
+	bottom: -30px; left: 5%;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.5)
+}
+
+
+#loi-ich img{
+	height: 120px
+}
+/*style cho vung san pham*/
+.icon-sp
+{
+	position: absolute;
+	width: 80%; height: 70%;
+	background: rgba(0,0,0,0.3);
+	top: 4%; left: 10%;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+	transform: scale(0);
+	opacity: 0
+}
+.icon-sp a{margin: 20px; color: #fff}
+.sanpham:hover >.icon-sp
+{
+	transform: scale(1); 
+	opacity: 1
+}
+.rounded-two
+{
+	boder-radius: 15px;
+	border-top-right-radius: 900px;
+	border-top-left-radius: 900px
+}
+.rounded-one-right-bottom
+{
+	boder-radius: 15px;
+	border-bottom-right-radius: 130px
+}
+.rounded-four
+{
+	boder-radius: 15px;
+	border-top-right-radius: 130px;
+	border-top-left-radius: 130px;
+	border-bottom-left-radius: 130px;
+	border-bottom-right-radius: 130px
+}
+.rounded-right
+{
+	boder-radius: 15px;
+	border-top-right-radius: 200px
+
+}
+.a-la-carte-menu
+{
+	 font-size: 1rem; 
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+	letter-spacing: 0.1rem
+}
+.footer
+{
+	background: url();
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.header .header-logo-image
+{
+	background: url( "../images/Background.jpg");
+	padding-top:0rem; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*position:absolute;
+	top:50%;left:0;transform:translateY(-50%);
+	padding:inherit;
+	max-height:100%;width:auto;margin-right:auto*/
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.topnav a {
+  float: left; font-family: Jost; letter-spacing: 0.05rem;
+  color: #f2f2f2;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*.topnav a:hover {
+  background-color: #B58C67;
+  color: black;
+}*/
+
+.topnav a.active {
+  
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+
+#main {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.p-0-nav {
+   padding-top: 1rem!important;
+}
+.align-content-center
+{
+	-ms-flex-line-pack: center !important;
+	align-content: space-between !important
+}
+
+.menu-font-weight
+{
+	font-weight: 300;
+		font-size: 17px;
+	letter-spacing: 1.5px
+	
+}
+.menu-font-weight-title
+{
+	font-weight: 300;
+	font-size: 30px
+}
+.menu-font-weight-p
+{
+	font-weight: 300;
+		font-size: 15px;
+	letter-spacing: 0.7px
+}
+.menu-font-weight-nav
+{
+	font-weight: 300;
+		font-size: 5 px;
+	letter-spacing: 0.7px;
+	padding: 1px
+}
+.align-items-center-huhu {
+  flex-align: center !important;
+  align-items: center !important;
+}
+.justify-content-center-huhu{
+  flex-pack: center !important;
+  justify-content: center !important;
+}
+.sizing
+{
+	font-size: 8px
+}
+.padding-top-header
+{
+	padding-top: 5rem
+}
+.navbar-brand-size
+{
+	 display:inline-grid;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+	align-items: center;
+
+}
+/*phan desserts*/
+
+  .left-column {
+            background-color: #1A2D1F;
+            padding: 20px;
+        }
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .top-box, .bottom-box {
+            height: 50%;
+            padding: 20px;
+        }
+        .top-box {
+            background-color:#1A2D1F;
+			height: 500px
+        }
+        .bottom-box {
+            background-color: #1A2D1F;
+        }
+.bg-img
+{
+	background-image: url("../images/Background (1).jpg");
+	background-repeat:no-repeat;
+	align-items: auto;
+}
+
+.font-style
+{
+	font-family: "Jost", sans-serif;
+	font-weight: 200;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+}
+.img-bogoc
+
+	{
+	boder-radius: 15px;
+	border-top-left-radius: 155px
+
+}
+
+.img-bogoc1
+{
+	border-top-left-radius: 170px;
+	border-top-right-radius: 170px;
+}
+
+.font-script
+{
+	font-family: "Mrs Saint Delafield";
+	color: #B58C67;
+
+}
+.right {  position: absolute;  right: 0px;    border: transparent;  padding-left: 20px}
+
+
+.footer-line {
+  border-top: 1px solid #CECECE;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.logo-container {
+  top: -25px; /* Adjust based on logo size */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img {
+  width: 200px; /* Adjust based on logo size */
+  background-color:#1A2D1F; /* Optional */
+
+}
+
+.form-control {
+  border-bottom: 1px solid  #CECECE; /* Change to the desired border color */
+  border-radius: 0.25rem; /* Optional: adjust border radius */
+}
+#BOOKING {
+  height: 10vh; /* Adjust the height to your preference */
+  background-image: url( "../images/Background (1).jpg"); /* Replace with your image */
+  background-size: cover; /* Cover the entire width */
+  background-position: center; /* Center the background */
+}
+.custom-img-size {
+  max-width: 400%; /* Ensure it is responsive */
+  height: auto; /* Maintain aspect ratio */
+  width: 110%; /* Increase this slightly for a bigger image */
+  margin-left: -20%; /* Adjust margin to keep it centered */
+}
+
+
+
+.gilda {
+	font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 70px
+}
+.jost {
+	font-family: "Jost", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.saint {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color: rgb(181, 140, 103);
+	font-size: 40px;
+}
+.border {
+	 width: 100%;
+	border: 0.25px solid #B58C67;
+	
+	align-items: center
+}
+.border1 {
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 0.5px solid #B58C67;
+}
+p {
+	font-weight: 300;
+	    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	font-size: 17px;
+		color: rgb(213, 216, 206)
+}
+p1 {
+	    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	border-bottom: 1px solid #B58C67;
+}
+#home .img-caption {
+	position: absolute;
+  right: 15%;
+  bottom: 35%;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.right {  position: absolute;  right: 0px;    border: transparent;  padding-left: 25px;}
+.left { position: absolute;  left: 0px;    border: transparent;  padding-right: 25px;}
+
+.top-text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 2px
+}
+#menu .card {
+	width: 100%;
+		background: transparent;
+
+	
+}
+.addtocart {
+	
+	font-size: 12px}
+.card-caption {
+position: absolute;
+ 	
+	right: 15%;
+	left: 15%;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+}
+.saint1 {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color: rgb(255, 255, 255);
+	font-size: 55px;
+
+}
+.saint2 {
+	  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+	color:  #B58C67;
+	font-size: 55px;
+
+#events .card { background: transparent;
+border: none}
+
+.menu-font-weight
+{
+	font-weight: 300;
+		font-size: 17px;
+	letter-spacing: 1.5px
+	
+}
+.footer-line {
+  border-top: 1px solid #CECECE;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.logo-container {
+  top: -25px; /* Adjust based on logo size */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img {
+  width: 200px; /* Adjust based on logo size */
+  background-color:#1A2D1F; /* Optional */
+
+}
+.font-style
+{
+	font-family: "Jost", sans-serif;
+	font-weight: 200;
+	word-spacing: 3px;
+	letter-spacing: 3px;
+}
+.img-bogoc
+{
+	border-top-left-radius: 155px;
+}
+.img-bogoc1
+{
+	border-top-left-radius: 170px;
+	border-top-right-radius: 170px;
+}
+
+.font-script
+{
+	font-family: "Mrs Saint Delafield";
+	color: #B58C67;
+
+}
+
+	
+/* Dropdown Button */
+#1 .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+#1 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#1 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+#1 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+#1 .dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+	
+.left1 {  left: 0px;    border: transparent;  padding-right: 25px;}
